@@ -56,6 +56,7 @@ nav {
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
+  opacity: 0.8;
 }
 
 nav li {
@@ -64,8 +65,8 @@ nav li {
 }
 
 header p {
-  background: #232a3b url("../images/Speciality-Certs_Feature.png") no-repeat
-    center center/cover;
+  /* background: #232a3b url("../images/Speciality-Certs_Feature.png") no-repeat
+    center center/cover; */
   color: #fff;
   height: 300px;
   font-family: audiowide;
@@ -78,7 +79,7 @@ header p {
 
 .call-to-action {
   align-items: center;
-  background: #333333;
+  background: #232a3b;
   color: #fff;
   display: flex;
   height: 80px;
@@ -376,7 +377,7 @@ button {
 /* Trainer Page CSS */
 
 .trainer-container {
-  background: #fff url("../images/training-background.jpg") no-repeat center;
+  /* background: #fff url("../images/training-background.jpg") no-repeat center; */
   background-size: cover;
   padding: 5%;
 }
@@ -448,8 +449,7 @@ button {
   transition: background-color 0.5s, border 0.5s;
 }
 
-/* Animation CSS */
-
+/* Animation CSS   */
 .fade-in {
   animation-name: fade-in;
   animation-duration: 1s;
@@ -482,160 +482,161 @@ button {
 
 @media only screen and (min-width: 769px) {
   /* Header CSS */
+}
+.main-header p {
+  color: #44c184;
+  opacity: 0.8;
+}
 
-  .main-header p {
-    color: #44c184;
-    opacity: 0.8;
-  }
+.main-header ul li {
+  color: #fff;
+}
+/* Underline Stroke */
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #fff;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
 
-  .main-header ul li {
-    color: #fff;
-  }
-  /* Underline Stroke */
-  nav.stroke ul li a {
-    position: relative;
-  }
-  nav.stroke ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: ".";
-    color: transparent;
-    background: #fff;
-    height: 1px;
-  }
-  nav.stroke ul li a:hover:after {
-    width: 100%;
-  }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
-    transition: all 0.5s;
-  }
+nav ul li a:hover {
+  color: #44c184;
+}
 
-  nav ul li a:hover {
-    color: #44c184;
-  }
+nav ul li a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+/* End of Stroke */
+.main-header nav,
+.main-header ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+}
 
-  nav ul li a {
-    display: block;
-    padding: 3px;
-    text-decoration: none;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-  }
-  /* End of Stroke */
-  .main-header nav,
-  .main-header ul {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1em;
-  }
-  .main-header nav {
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .main-header ul {
-    margin-right: 10%;
-  }
-  .main-header h1 {
-    align-self: center;
-    margin: 0 auto 0 10%;
-  }
-  .main-header li {
-    margin-right: 30px;
-  }
-  /* Container CSS */
-  .container {
-    width: 80%;
-  }
-  .flex-container {
-    display: flex;
-  }
-  /* Section 1 */
-  .item-1,
-  .item-2,
-  .item-3 {
-    flex-grow: 1;
-  }
-  .section-1 .item-2 {
-    margin: 0 20px;
-  }
-  /* Section 2 CSS */
-  .section-2 .item-2 {
-    margin: 0 20px;
-  }
-  .sign-up {
-    padding: 10px 50px;
-  }
-  /* Section 3 CSS */
-  .section-3 .item-2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-  }
-  .section-3 .item-2 .input {
-    flex-grow: 0.7;
-    margin-top: 20px;
-  }
-  /* Main Footer CSS */
-  .main-footer {
-    text-align: left;
-  }
-  .main-footer .item-1,
-  .main-footer .item-2 {
-    flex: 1;
-  }
-  .main-footer .item-1 {
-    flex: 2 40%;
-  }
-  .copyright {
-    text-align: center;
-  }
-  /* Sign Up Form */
-  .join-now-container {
-    width: 70%;
-  }
-  /* Gyms CSS */
-  .gyms-title {
-    font-size: 2em;
-  }
-  .gyms-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .gyms-item-1,
-  .gyms-item-2,
-  .gyms-item-3 {
-    flex-grow: 1;
-  }
-  /* Trainers Page CSS */
-  .trainer-profile {
-    flex-direction: row;
-  }
-  .trainer-profile img {
-    height: 250px;
-  }
-  .trainer-profile-content {
-    height: 250px;
-  }
-  .reverse {
-    flex-direction: row-reverse;
-  }
+.main-header nav {
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.main-header ul {
+  margin-right: 10%;
+}
+.main-header h1 {
+  align-self: center;
+  margin: 0 auto 0 10%;
+}
+.main-header li {
+  margin-right: 30px;
+}
+/* Container CSS */
+.container {
+  width: 80%;
+}
+.flex-container {
+  display: flex;
+}
+/* Section 1 */
+.item-1,
+.item-2,
+.item-3 {
+  flex-grow: 1;
+}
+.section-1 .item-2 {
+  margin: 0 20px;
+}
+/* Section 2 CSS */
+.section-2 .item-2 {
+  margin: 0 20px;
+}
+.sign-up {
+  padding: 10px 50px;
+}
+/* Section 3 CSS */
+.section-3 .item-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.section-3 .item-2 .input {
+  flex-grow: 0.7;
+  margin-top: 20px;
+}
+/* Main Footer CSS */
+.main-footer {
+  text-align: left;
+}
+.main-footer .item-1,
+.main-footer .item-2 {
+  flex: 1;
+}
+.main-footer .item-1 {
+  flex: 2 40%;
+}
+.copyright {
+  text-align: center;
+}
+/* Sign Up Form */
+.join-now-container {
+  width: 70%;
+}
+/* Gyms CSS */
+.gyms-title {
+  font-size: 2em;
+}
+.gyms-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gyms-item-1,
+.gyms-item-2,
+.gyms-item-3 {
+  flex-grow: 1;
+}
+/* Trainers Page CSS */
+.trainer-profile {
+  flex-direction: row;
+}
+.trainer-profile img {
+  height: 250px;
+}
+.trainer-profile-content {
+  height: 250px;
+}
+.reverse {
+  flex-direction: row-reverse;
 }
 
 /* Mobile Landscape Mode CSS */
 
 @media only screen and (min-width: 500px) and (orientation: landscape) {
   /* Header CSS */
+
   .main-header nav,
   .main-header ul {
     align-items: center;
@@ -765,5 +766,59 @@ button {
   }
   .trainer-profile-content {
     padding-top: 8%;
+  }
+}
+/* Video css */
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+video {
+  width: 100% !important;
+  height: 15%;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+  header video {
+    display: none;
   }
 }
