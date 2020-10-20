@@ -75,10 +75,6 @@ header p {
   text-align: center;
 }
 
-header #gym-p {
-  font-weight: bold;
-}
-
 /* Call to Action CSS */
 
 .call-to-action {
@@ -114,6 +110,24 @@ header #gym-p {
   margin: 0 auto 50px;
   text-align: center;
   width: 90%;
+}
+
+.container-2 {
+  /* margin: 0 auto 50px; */
+  text-align: center;
+  width: 100%;
+}
+
+#b-2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/sun-1.jpg) no-repeat fixed center/cover;
+  opacity: 0.6;
 }
 
 /*Section 1 CSS */
@@ -250,7 +264,7 @@ header #gym-p {
 .social-icon {
   font-size: 1.2em;
   margin-bottom: 40px;
-  margin-right: 10px;
+  margin-right: 12px;
   transition: color 0.5s;
 }
 
@@ -414,9 +428,10 @@ button {
 }
 
 .trainer-profile-content {
-  background-color: #fff;
+  background-color: #333;
   padding: 5%;
   text-align: center;
+  color: #fff;
 }
 
 /* Other CSS */
@@ -484,12 +499,13 @@ button {
 
 /* Media Queries */
 
+/* Header CSS */
+
 @media only screen and (min-width: 769px) {
-  /* Header CSS */
 }
 .main-header p {
   color: #44c184;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .main-header ul li {
@@ -639,7 +655,10 @@ nav ul li a {
 /* Mobile Landscape Mode CSS */
 
 @media only screen and (min-width: 500px) and (orientation: landscape) {
-  /* Header CSS */
+  .main-header {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 
   .main-header nav,
   .main-header ul {
@@ -775,24 +794,92 @@ nav ul li a {
 /* Video css */
 header {
   position: relative;
-  background-color: black;
+  background-color: #fff;
   height: 75vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
-#top {
-  background: url(/images/pool-1.jpg) no-repeat center center/cover;
-  height: 10vh;
+/* .container-b {
+  background: url(/images/gym-locations.jpg) no-repeat center center/cover;
+  font-weight: bold;
+  color: #44c184;
+  background-position: center bottom;
+  height: 200px;
+  width: auto;
+  opacity: 0.5;
 }
 
 #gym-p {
-  font-weight: bold;
-  color: #44c184;
-  text-align: left;
+  text-align: center;
+  padding-top: 100px;
+} */
+
+/* .my-div {
+  position: relative;
+  z-index: 1;
+  text-align: center !important;
+  padding-top: 100px !important;
+  font-size: 4rem !important;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  color: #44c184 !important;
 }
 
+.my-div:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/gym-locations.jpg) no-repeat center center/cover;
+  opacity: 0.4;
+  height: 200px;
+  width: auto;
+  background-position: bottom;
+} */
+
+#my-div {
+  /* background: url(/images/pool-1.jpg) no-repeat center center/cover; */
+  text-align: left;
+  color: #343d46;
+  font-size: 4.5rem;
+  opacity: 0.9;
+  /* padding-right: 100px;
+  position: relative;
+  top: 8px;
+  left: 16px; */
+  box-sizing: border-box;
+  /* padding-left: 200px;
+  padding-top: 200px; */
+  padding-top: 150px;
+  padding-left: 100px;
+}
+
+#my-div::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/pool-1.jpg) no-repeat center center/cover;
+  opacity: 0.5;
+}
+
+.gym-green {
+  color: #44c184;
+}
+
+.york-1 {
+  padding-left: 150px !important;
+  font-size: 4.5rem;
+}
 header video {
   position: absolute;
   top: 50%;
@@ -828,12 +915,7 @@ video {
   height: 15%;
 }
 
-#top {
-  padding: 0;
-  margin: 0;
-}
-
-@media (pointer: coarse) and (hover: none) {
+/* @media (pointer: coarse) and (hover: none) {
   header {
     background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
       no-repeat center center scroll;
@@ -841,4 +923,112 @@ video {
   header video {
     display: none;
   }
+} */
+
+/* UPDATED CSS/WEBSITE */
+
+.new-location {
+  background: url(/images/pool-1.jpg) no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.new-location p {
+  margin: 0;
+}
+
+.btn-underline {
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px 40px;
+  border: 2px solid #333;
+  background-color: #44c184;
+  /* color: #fff !important; */
+  cursor: pointer;
+  margin-bottom: 50px auto !important;
+  border-radius: 50px;
+  animation: shadow-pulse 2s infinite;
+  text-transform: uppercase;
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+  /* background: transparent; */
+  color: #fff !important;
+  /* border: none; */
+  font-size: 20px;
+  letter-spacing: 2px;
+  /* padding: 25px 80px; */
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  /* animate and time the transitions*/
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn-underline:hover {
+  background-color: rgb(3, 105, 71);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 1.2s;
+}
+
+/* .btn-underline:hover:before {
+  top: 0;
+  left: 0;
+} */
+
+.btn-center {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.train-1 {
+  background: url(/images/t-1jpg.jpg) no-repeat center center/cover;
+  opacity: 0.9;
+}
+
+/* .train-1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/t-1jpg.jpg) no-repeat center center/cover;
+  opacity: 0.5;
+} */
+
+#train-1 {
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  box-sizing: border-box;
+}
+
+#train-1 p {
+  color: #44c184;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#train-1::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/t-1jpg.jpg) no-repeat center center/cover;
+  opacity: 0.4;
 }
