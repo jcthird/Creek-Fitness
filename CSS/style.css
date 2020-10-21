@@ -394,22 +394,23 @@ button {
 
 /* Trainer Page CSS */
 
-.trainer-container {
+#trainer-container {
   /* background: #fff url("../images/training-background.jpg") no-repeat center; */
-  background-size: cover;
+  /* background-size: cover; */
   padding: 5%;
+  background: url(/images/gym-4.jpg) no-repeat center center/cover;
 }
 
-.trainer-container section {
+#trainer-container section {
   transition: transform 0.5s;
 }
 
-.trainer-container section:hover {
+#trainer-container section:hover {
   transform: scale(1.05);
   transition: transform 0.5s;
 }
 
-.trainer-container h2 {
+#trainer-container h2 {
   color: #fff;
   margin-bottom: 5%;
   text-align: center;
@@ -503,6 +504,19 @@ button {
 
 @media only screen and (min-width: 769px) {
 }
+
+#arrow {
+  color: #44c184 !important;
+  text-align: center !important;
+  font-size: 3rem !important;
+  position: absolute;
+  margin-bottom: 100px;
+}
+
+#arrow:hover {
+  color: #05723f !important;
+}
+
 .main-header p {
   color: #44c184;
   opacity: 1;
@@ -968,6 +982,7 @@ video {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  opacity: 0.8;
 }
 .btn-underline:hover {
   background-color: rgb(3, 105, 71);
@@ -990,10 +1005,10 @@ video {
   transform: translate(-50%, -50%);
 }
 
-.train-1 {
+/* .train-1 {
   background: url(/images/t-1jpg.jpg) no-repeat center center/cover;
   opacity: 0.9;
-}
+} */
 
 /* .train-1::before {
   content: "";
@@ -1015,7 +1030,7 @@ video {
 }
 
 #train-1 p {
-  color: #44c184;
+  color: #232a3b;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -1030,5 +1045,5 @@ video {
   left: 0;
   right: 0;
   background: url(/images/t-1jpg.jpg) no-repeat center center/cover;
-  opacity: 0.4;
+  opacity: 0.3;
 }
