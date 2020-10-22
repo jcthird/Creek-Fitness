@@ -812,7 +812,7 @@ nav ul li a {
 header#all-3 {
   position: relative;
   background-color: #fff;
-  height: 90vh;
+  height: 85vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -1145,19 +1145,19 @@ video {
   opacity: 0.4;
 } */
 
-#contact-main {
+/* #contact-main {
   text-align: center;
   font-size: 1rem;
-  /* opacity: 0.9; */
+   opacity: 0.9; 
   box-sizing: border-box;
-  /* background: url(/images/fitness\ club\ front\ desk.jpg) no-repeat center
-    center/cover; */
+   background: url(/images/fitness\ club\ front\ desk.jpg) no-repeat center
+    center/cover; 
 
-  /* width: 100vw;
+   width: 100vw;
   height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: relative; */
+  position: relative; 
   opacity: 0.8;
 }
 
@@ -1169,9 +1169,9 @@ video {
   opacity: 1;
   font-size: 50px;
   text-align: center;
-}
+} */
 
-#contact-main::before {
+/* #contact-main::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1186,7 +1186,7 @@ video {
   height: auto;
   padding-bottom: 680px;
   padding-top: 100px;
-}
+} */
 
 header {
   vertical-align: top !important;
@@ -1195,12 +1195,34 @@ header {
 }
 
 #contact-img {
-  width: 100%;
+  width: 100vw;
   height: 50vh;
-  background-position: center;
+  color: #44c184;
+  /* max-height: 100%; */
+}
+.container-c {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
 }
 
-.img-s {
-  text-align: center;
-  color: black;
+/* .p-c p {
+  display: inline;
+} */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+header.container-c {
+  margin: 0 !important;
+  padding: 0 !important;
 }
