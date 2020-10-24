@@ -50,18 +50,28 @@ h3 {
 
 /* Header CSS */
 
+#links-a {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-position: outside;
+  position: relative;
+  left: 150px;
+}
 nav {
   background-color: #232a3b;
   color: #fff;
   font-size: 1.4em;
   padding: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 nav li {
   list-style-type: none;
   padding: 5px;
+}
+
+#nav-bar {
 }
 
 header p {
@@ -87,7 +97,7 @@ header p {
 }
 
 .call-to-action h2 {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .call-to-action p {
@@ -95,7 +105,7 @@ header p {
   background-color: #44c184;
   border-radius: 2px;
   margin-left: 20px;
-  padding: 5px 10px;
+  padding: 5px 8px;
   transition: margin-top 0.5s;
 }
 
@@ -348,15 +358,18 @@ input[type="checkbox"] {
 }
 
 button {
-  background-color: #fff;
+  background-color: #44c184;
   border: 1px solid #44c184;
-  color: #44c184;
+  color: #fff;
   cursor: pointer;
   margin-top: 40px;
   padding: 15px;
   width: 100%;
 }
 
+button:hover {
+  background-color: #045a32;
+}
 /* Gyms CSS */
 
 .gyms-title {
@@ -812,7 +825,7 @@ nav ul li a {
 header#all-3 {
   position: relative;
   background-color: #fff;
-  height: 85vh;
+  height: 90vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -900,6 +913,7 @@ header#all-3 {
   font-size: 5.5rem;
 }
 header video {
+  /* display: block; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -931,9 +945,9 @@ header .overlay {
 }
 video {
   width: 100% !important;
-  height: 15%;
-  margin-top: 65px;
-  /* padding-top: 80px;  */
+  height: auto !important;
+  margin-top: 40px;
+  /* display: block; */
 }
 
 /* @media (pointer: coarse) and (hover: none) {
@@ -1175,8 +1189,38 @@ video {
   content: "";
   position: absolute;
   z-index: -1;
+  top: 0;/* #contact-main::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
   top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/fitness\ club\ front\ desk.jpg) no-repeat center
+    center/cover;
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  padding-bottom: 680px;
+  padding-top: 100px;
+} */
+/* #contact-main::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(/images/fitness\ club\ front\ desk.jpg) no-repeat center
+    center/cover;
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  padding-bottom: 680px;
+  padding-top: 100px;
+}
   left: 0;
   right: 0;
   background: url(/images/fitness\ club\ front\ desk.jpg) no-repeat center
@@ -1195,11 +1239,33 @@ header {
 }
 
 #contact-img {
-  width: 100vw;
+  display: block;
   height: 50vh;
-  color: #44c184;
-  /* max-height: 100%; */
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+  opacity: 0.4;
 }
+
+#join-img {
+  display: block;
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 25%;
+  opacity: 0.7;
+}
+
+.container-j {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
+
 .container-c {
   position: relative;
   text-align: center;
@@ -1219,10 +1285,31 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #232a3b;
+  font-size: 5rem;
 }
 
 header.container-c {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+/* .join-img {
+  background: url(/images/fitness\ club\ front\ desk.jpg) no-repeat center
+    center/cover;
+} */
+
+#btn-pass {
+  width: auto;
+  height: auto;
+  margin: 0;
+  border-radius: 5px;
+  /* padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px; */
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
 }
