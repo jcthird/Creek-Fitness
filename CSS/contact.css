@@ -9,8 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #03080a;
+  min-height: 80vh;
+  background: black;
+  padding-top: 50px;
+  /* background: url(/images/free-pass-bgjpg.jpg) no-repeat center center/cover; */
 }
 
 .container-g {
@@ -20,7 +22,7 @@
 
 .container-g h2 {
   width: 100%;
-  color: #44c184;
+  color: #fff;
   font-size: 36px;
   text-align: center;
   margin-bottom: 10px;

@@ -15,7 +15,7 @@
   height: 0px;
   margin-left: auto;
   margin-right: auto;
-  border-top: 3px solid black;
+  border-top: 1px solid black;
 }
 
 /* Link CSS */
@@ -226,7 +226,7 @@ header p {
 
 /* Contact Form CSS */
 
-.input {
+/* .input {
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
   display: block;
@@ -234,14 +234,11 @@ header p {
   padding: 5px;
   text-shadow: 0;
   width: 100%;
-}
+} */
 
 .section-3 {
   padding-top: 80px;
   /* padding-top: 30px; */
-}
-
-#form-last input {
 }
 
 .contact-button {
@@ -327,7 +324,7 @@ legend {
   margin-bottom: 30px;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
 input[type="password"],
 textarea,
@@ -337,7 +334,7 @@ select {
   margin: 20px 0;
   padding: 10px;
   width: 100%;
-}
+} */
 
 .number {
   background-color: #44c184;
