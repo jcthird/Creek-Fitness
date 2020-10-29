@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="/CSS/input.css">
+  <link rel="stylesheet" href="/CSS/input2.css">
   <title>Creek Fitness</title>
 </head>
 <body>
@@ -53,7 +54,38 @@
     <p><a href="join-now.html">Join Now</a></p>
   </div>
   <main>
-     <section class="section-3">
+
+    <div class="container fade-in wow" data-wow-delay=".5s">
+        <h3>Contact Us</h3>
+        
+        <hr class="line-one">
+        <p class="section-title-content">Need to get in touch? Fill in the form below for more information:</p>
+
+    <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="">
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="">
+
+    <!-- <label for="phone">Phone</label>
+    <select id="country" name="">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option> -->
+    </select>
+
+    <label for="subject">Comments</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+     <!-- <section class="section-3">
       <div class="container fade-in wow" data-wow-delay=".5s">
         <h3>Contact Us</h3>
         
@@ -67,18 +99,18 @@
               <input type="text" name="user_subject" placeholder="Subject" class="input">
             </div>
             <!-- End of Item-1 -->
-            <div class="item-2">
-              <textarea placeholder="Message..." class="input"></textarea>
+            <!-- <div class="item-2">
+              <textarea placeholder="Message..." class="input"></textarea> -->
               <!-- <p class="contact-button"><a href="#">Submit</a></p> -->
               <!-- <input class="contact-button" type="submit" value="Submit"> -->
-            </div>
+            <!-- </div> -->
             <!-- End of Item-2 -->
-          </div>
-          <input class="contact-button" type="submit" value="Submit">
+          <!-- </div>
+          <input class="contact-button" type="submit" value="Submit"> -->
           <!-- End of Flex Container -->
-        </form>
-    </section>
-    </div>
+        <!-- </form>
+    </section> -->
+    <!-- </div>  -->
   </main>
 
   <footer class="main-footer">
