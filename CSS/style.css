@@ -50,14 +50,14 @@ h3 {
 
 /* Header CSS */
 
-/* #links-a {
+#links-a {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   list-style-position: outside;
   position: relative;
   left: 150px;
-} */
+}
 nav {
   background-color: #232a3b;
   color: #fff;
@@ -537,7 +537,7 @@ button:hover {
     color: #fff;
   } */
   /* Underline Stroke */
-  /* nav.stroke ul li a {
+  nav.stroke ul li a {
     position: relative;
   }
   nav.stroke ul li a:after {
@@ -572,7 +572,7 @@ button:hover {
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
-  } */
+  }
   /* End of Stroke */
   .main-header nav,
   .main-header ul {
@@ -944,12 +944,12 @@ header .overlay {
   z-index: 1;
 }
 video {
-  width: 100% !important;
+  max-width: 100% !important;
   height: auto !important;
   object-fit: cover;
+
   /* display: block; */
 }
-
 /* @media (pointer: coarse) and (hover: none) {
   header {
     background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
