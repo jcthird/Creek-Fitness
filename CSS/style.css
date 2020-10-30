@@ -516,7 +516,7 @@ button:hover {
 /* Header CSS */
 
 @media only screen and (min-width: 769px) {
-  /* #arrow {
+  #arrow {
     color: red;
     text-align: center !important;
     font-size: 3rem !important;
@@ -528,14 +528,14 @@ button:hover {
     color: #05723f !important;
   }
 
-  .main-header p {
+  /* .main-header p {
     color: #44c184;
     opacity: 1;
   }
 
   .main-header ul li {
     color: #fff;
-  } */
+  }  */
   /* Underline Stroke */
   nav.stroke ul li a {
     position: relative;
