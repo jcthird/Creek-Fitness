@@ -10,38 +10,38 @@
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="/CSS/hamburger.css">
   <title>Creek Fitness</title>
 </head>
-
 <body>
-  <header class="main-header" id="all-3">
-    <nav id="nav-bar" class="stroke">
+  <header class="main-header header" id="all-3">
+    <!-- <div id="content"> -->
+    <nav role="navigation" id="nav-bar menu" class="stroke overlay-menu nav">
+      <div class="openMenu">
+        <i class="fa fa-bars"></i>
+      </div>
       <h1 class="fade-in wow" data-wow-delay=".5s"><a href="index.html"><span class="title-color">Creek</span>
           Fitness</a></h1>
-      <ul id="links-a">
+      <ul class="menu mainMenu" id="links-a">
         <li class="fade-in wow" data-wow-delay=".5s"><a href="index.html">Home</a></li>
         <li class="fade-in wow" data-wow-delay=".5s"><a href="gyms.html">Locations</a></li>
         <li class="nav-end fade-in wow" data-wow-delay=".5s"><a href="trainers.html" class="active-page">Trainers</a></li>
         <li class="nav-end fade-in wow" id="delay-3" data-wow-delay=".5s"><a href="contact.html">Contact</li></a>
         <button id="btn-pass" class="fade-in wow" id="delay-3" data-wow-delay=".5s">Free Pass</button>
+        <div class="closeMenu">
+          <i class="fa fa-times"></i>
+        </div>
       </ul>
     </nav>
-    <!-- Icons -->
-    <!-- <div class="social-menu">
-  <h1>Social Media Button Hover Effect</h1>
-  <ul>
-    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-    <li><a href=""><i class="fa fa-youtube"></i></a></li>
-    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-  </ul>
-</div> -->
-<!-- Icons -->
     <div id="train-1"><p>Our  Instructors <br><a href="trainers.html#trainer-container"
         ><i id="arrow" class="fas fa-chevron-down fa-3x swing"></i
       ></a></p>
     </div>
+    <div class="container-c">
+  <img id="contact-img" src="/images/t-1jpg.jpg" alt="">
+  <div class="centered">OUR INSTRUCTORS</div>
+  </div>
+   
   <!-- <h1>Social Media Button Hover Effect</h1> -->
     <div class="social-menu">
   <ul>
@@ -139,6 +139,9 @@
   <script src="JS/wow.min.js"></script>
   <script>
     new WOW().init();
+  </script>
+  <script src="/JS/app.js">
+    
   </script>
 </body>
 
