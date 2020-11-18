@@ -60,8 +60,8 @@ h3 {
 #links-a {
   list-style-type: none;
   display: flex;
-  /* justify-content: space-between; */
-  /* list-style-position: outside; */
+  /* justify-content: space-between;
+  list-style-position: outside; */
   position: relative;
   left: 150px;
 }
@@ -525,9 +525,6 @@ button:hover {
 /* Header CSS */
 
 @media only screen and (min-width: 769px) {
-  .container-c {
-    display: none;
-  }
   .social-menu {
     display: block;
   }
@@ -696,9 +693,6 @@ button:hover {
 /* Mobile Landscape Mode CSS */
 
 @media only screen and (min-width: 500px) and (orientation: landscape) {
-  .container-c {
-    display: none;
-  }
   .social-menu {
     display: block;
   }
@@ -827,7 +821,7 @@ button:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-  .container-c {
+  .container-t {
     display: none;
   }
   .social-menu {
@@ -913,6 +907,15 @@ button:hover {
     transform: translate(-50%, -50%);
     color: #232a3b;
     font-size: 3.2rem !important;
+  }
+
+  video {
+    object-fit: contain !important;
+    z-index: -1 !important;
+  }
+
+  header#all-3 {
+    z-index: 10;
   }
 }
 /* Video css */
@@ -1041,6 +1044,7 @@ video {
   max-width: 100% !important;
   height: auto !important;
   object-fit: cover;
+  padding-top: 100px;
 
   /* display: block; */
 }
@@ -1224,7 +1228,7 @@ video {
 
 /* Current Page */
 #nav-bar ul li a.active-page {
-  color: #44c184;
+  color: #44c184 !important;
 }
 
 /* Contact */
@@ -1334,6 +1338,14 @@ video {
   object-position: 50% 100%;
   opacity: 0.4;
 }
+#location-img {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+  opacity: 0.4;
+}
 
 #join-img {
   display: block;
@@ -1355,6 +1367,42 @@ video {
 }
 
 .container-c {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
+.container-f {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
+.container-g {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
+.container-i {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
+.container-t {
   position: relative;
   text-align: center;
   color: white;

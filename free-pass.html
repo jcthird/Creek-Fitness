@@ -11,19 +11,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/contact.css">
+  <link rel="stylesheet" href="/CSS/hamburger.css">
   <title>Creek Fitness</title>
 </head>
 <body>
   <header class="main-header" id="top">
     <nav id="nav-bar" class="stroke">
+       <div class="openMenu">
+        <i class="fa fa-bars"></i>
+      </div>
       <h1 class="fade-in wow" data-wow-delay=".5s"><a href="index.html"><span class="title-color">Creek</span>
           Fitness</a></h1>
-      <ul id="links-a">
+      <ul class="menu mainMenu" id="links-a">
         <li class="fade-in wow" data-wow-delay=".5s"><a href="index.html">Home</a></li>
         <li class="fade-in wow" data-wow-delay=".5s"><a href="gyms.html">Locations</a></li>
         <li class="nav-end fade-in wow" data-wow-delay=".5s"><a href="trainers.html">Trainers</a></li>
-        <li class="nav-end fade-in wow" id="delay-3" data-wow-delay=".5s"><a href="contact.html" class="active-page">Contact</li></a>
-       <button id="btn-pass" class="fade-in wow" id="delay-3" data-wow-delay=".5s"><a href="free-pass.html">Free Pass</button></a>
+        <li class="nav-end fade-in wow" id="delay-3" data-wow-delay=".5s"><a href="contact.html">Contact</li></a>
+        <button id="btn-pass" class="fade-in wow" id="delay-3" data-wow-delay=".5s"><a href="free-pass.html" class="active-page">Free Pass</button></a>
+       <div class="closeMenu">
+          <i class="fa fa-times"></i>
+        </div>
       </ul>
     </nav>
  
@@ -169,7 +176,7 @@
       <!-- End of Item-1 -->
       <section class="item-2">
         <p class="hello">Say hello:</p>
-        <p class="contact-info"><i class="contact-icon fas fa-map-marker-alt"></i><b>Address:</b> 100 Universal City Plaza, Universal City, CA 91608</p>
+        <p class="contact-info"><i class="contact-icon fas fa-map-marker-alt"></i><b>Address:</b> 1111 S. Figueroa Street, Los Angeles, CA 90015</p>
         <p class="contact-info"><i class="contact-icon fas fa-envelope"></i><b>Email:</b> CreekFitness@gmail.com</p>
         <p class="contact-info"><i class="contact-icon fas fa-phone"></i><b>Phone:</b> (777) 777-7777</p>
       </section>
@@ -188,6 +195,9 @@
   <script src="JS/wow.min.js"></script>
   <script>
     new WOW().init();
+  </script>
+   <script src="/JS/app.js"> 
+
   </script>
 </body>
 
