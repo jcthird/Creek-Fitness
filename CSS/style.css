@@ -1384,7 +1384,7 @@ video {
   text-transform: uppercase;
   height: 100%;
 }
-.container-g {
+/* .container-g {
   position: relative;
   text-align: center;
   color: white;
@@ -1392,7 +1392,7 @@ video {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   height: 100%;
-}
+} */
 .container-i {
   position: relative;
   text-align: center;
