@@ -862,7 +862,7 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .social-menu {
     display: none;
   }
@@ -909,9 +909,31 @@ button:hover {
     font-size: 3.2rem !important;
   }
 
-  video {
-    object-fit: contain !important;
+  .video-container {
+    /* object-fit: contain !important; 
     z-index: -1 !important;
+    display: block !important;
+    height: 100vh !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+     object-position: 50% 50% !important; 
+     opacity: 0.7;  */
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100% !important;
+    min-height: 80% !important;
+    padding-top: 90px !important;
+    width: auto;
+    height: auto;
+    background-size: cover !important;
+    overflow: hidden; */
+    height: 50vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: 50% 100% !important;
+    /* opacity: 0.4; */
   }
 
   header#all-3 {
@@ -928,6 +950,18 @@ header#all-3 {
   overflow: hidden;
 }
 
+.video-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  /* z-index: -100; */
+  background-size: cover;
+  overflow: hidden;
+}
 /* .container-b {
   background: url(/images/gym-locations.jpg) no-repeat center center/cover;
   font-weight: bold;
