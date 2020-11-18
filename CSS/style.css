@@ -311,6 +311,7 @@ header p {
 .join-now-container {
   margin: 0 auto;
   width: 100%;
+  padding: 20px;
 }
 
 .sign-up-form {
@@ -393,6 +394,8 @@ button:hover {
 .gyms-item-3 {
   margin: 50px 0;
   transition: transform 0.5s;
+  /* mobile padding */
+  padding: 20px;
 }
 
 .gyms-item-1:hover,
@@ -863,6 +866,30 @@ button:hover {
 }
 
 @media only screen and (max-width: 481px) {
+  #location-img {
+    display: block;
+    height: 40vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  #contact-img {
+    display: block;
+    height: 30vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  #contact-img-t {
+    display: block;
+    height: 40vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
   .social-menu {
     display: none;
   }
@@ -902,11 +929,28 @@ button:hover {
   }
 
   .centered {
-    position: absolute;
+    position: absolute !important;
     top: 110px !important;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) !important;
     color: #232a3b;
     font-size: 3.2rem !important;
+    font-weight: bold;
+  }
+  .centered-g {
+    position: absolute !important;
+    top: 110px !important;
+    transform: translate(-50%, -50%) !important;
+    color: #232a3b;
+    font-size: 2.2rem !important;
+    font-weight: bold;
+  }
+
+  .line-one {
+    width: 65%;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid black;
   }
 
   .video-container {
@@ -929,7 +973,7 @@ button:hover {
     height: auto;
     background-size: cover !important;
     overflow: hidden; */
-    height: 50vh !important;
+    height: 20vh !important;
     width: 100% !important;
     object-fit: cover !important;
     object-position: 50% 100% !important;
@@ -938,6 +982,82 @@ button:hover {
 
   header#all-3 {
     z-index: 10;
+  }
+
+  /* Location btn */
+  .btn-underline {
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+    display: inline-block;
+    font-size: 10px !important;
+    padding: 10px 10px !important;
+    border: 2px solid #333;
+    background-color: #44c184;
+    /* color: #fff !important; */
+    cursor: pointer;
+    margin-bottom: 50px auto !important;
+    border-radius: 50px;
+    animation: shadow-pulse 2s infinite;
+    text-transform: uppercase;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+    /* background: transparent; */
+    color: #fff !important;
+    /* border: none; */
+    /* font-size: 20px; */
+    letter-spacing: 1px;
+    /* padding: 25px 80px; */
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    /* animate and time the transitions*/
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0.8;
+  }
+  .btn-underline:hover {
+    background-color: rgb(3, 105, 71);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 1.2s;
+  }
+
+  .btn-center {
+    margin: 0;
+    position: absolute;
+    top: 85% !important;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /* end */
+
+  #my-div {
+    /* background: url(/images/pool-1.jpg) no-repeat center center/cover; */
+    text-align: left;
+    color: #343d46;
+    font-size: 5.5rem;
+    opacity: 0.9;
+    /* padding-right: 100px;
+  position: relative;
+  top: 8px;
+  left: 16px; */
+    box-sizing: border-box;
+    /* padding-left: 200px;
+  padding-top: 200px; */
+    padding-bottom: 50px !important;
+    padding-right: 30px !important;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .york-1 {
+    padding-left: 50px !important;
+    padding-right: 90px;
+    /* font-size: 5.5rem; */
   }
 }
 /* Video css */
@@ -1017,13 +1137,13 @@ header#all-3 {
   box-sizing: border-box;
   /* padding-left: 200px;
   padding-top: 200px; */
-  padding-top: 150px;
-  padding-left: 100px;
+  padding-bottom: 150px;
+  padding-right: 700px;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
 }
 
-#my-div::before {
+/* #my-div::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1033,15 +1153,15 @@ header#all-3 {
   right: 0;
   background: url(/images/pool-1.jpg) no-repeat center center/cover;
   opacity: 0.5;
-}
+} */
 
 .gym-green {
   color: #44c184;
 }
 
 .york-1 {
-  padding-left: 60px !important;
-  font-size: 5.5rem;
+  padding-left: 150px;
+  /* font-size: 5.5rem; */
 }
 header video {
   /* display: block; */
@@ -1418,7 +1538,7 @@ video {
   text-transform: uppercase;
   height: 100%;
 }
-/* .container-g {
+.container-g {
   position: relative;
   text-align: center;
   color: white;
@@ -1426,7 +1546,7 @@ video {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   height: 100%;
-} */
+}
 .container-i {
   position: relative;
   text-align: center;
@@ -1451,6 +1571,14 @@ video {
 } */
 
 .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #232a3b;
+  font-size: 5rem;
+}
+.centered-g {
   position: absolute;
   top: 50%;
   left: 50%;
