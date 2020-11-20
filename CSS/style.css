@@ -180,6 +180,7 @@ header p {
 .section-2 .item-2,
 .section-2 .item-3 {
   margin-top: 10px;
+
   transition: transform 0.3s;
 }
 
@@ -395,7 +396,7 @@ button:hover {
   margin: 50px 0;
   transition: transform 0.5s;
   /* mobile padding */
-  padding: 20px;
+  padding: 50px;
 }
 
 .gyms-item-1:hover,
@@ -867,6 +868,13 @@ button:hover {
 }
 
 @media only screen and (max-width: 481px) {
+  .section-2 .item-1,
+  .section-2 .item-2,
+  .section-2 .item-3 {
+    margin-top: 10px;
+    padding: 25px;
+    transition: transform 0.3s;
+  }
   #location-img {
     position: absolute !important;
     display: block;
@@ -877,7 +885,7 @@ button:hover {
     opacity: 0.4;
   }
   #contact-img {
-    position: absolute !important;
+    /* position: absolute !important; */
     display: block;
     height: 30vh !important;
     width: 100%;
