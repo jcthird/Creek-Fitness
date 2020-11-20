@@ -868,6 +868,7 @@ button:hover {
 
 @media only screen and (max-width: 481px) {
   #location-img {
+    position: absolute !important;
     display: block;
     height: 40vh !important;
     width: 100%;
@@ -876,6 +877,7 @@ button:hover {
     opacity: 0.4;
   }
   #contact-img {
+    position: absolute !important;
     display: block;
     height: 30vh !important;
     width: 100%;
