@@ -532,7 +532,7 @@ button:hover {
     display: block;
   }
   #arrow {
-    color: red !important;
+    color: #44c184 !important;
     text-align: center !important;
     font-size: 3rem !important;
     position: absolute;
@@ -540,7 +540,7 @@ button:hover {
   }
 
   #arrow:hover {
-    color: black !important;
+    color: rgb(3, 105, 71);
   }
 
   .main-header p {
@@ -705,7 +705,7 @@ button:hover {
   }
 
   #arrow {
-    color: red;
+    color: #44c184 !important;
   }
 
   .main-header nav,
@@ -836,12 +836,13 @@ button:hover {
   }
 
   #arrow {
-    color: red !important;
+    color: #44c184 !important;
     text-align: center !important;
     font-size: 3rem !important;
     position: absolute;
     margin-bottom: 100px;
   }
+
   .call-to-action h2 {
     margin-right: 5%;
   }
@@ -883,6 +884,7 @@ button:hover {
     opacity: 0.4;
   }
   #contact-img-t {
+    position: absolute !important;
     display: block;
     height: 40vh !important;
     width: 100%;
