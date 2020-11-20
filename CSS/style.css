@@ -142,7 +142,7 @@ header p {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(/images/sun-1.jpg) no-repeat fixed center/cover;
+  background: url(/images/sun-1.jpg) no-repeat fixed center/cover !important;
   opacity: 0.6;
 }
 
@@ -876,7 +876,7 @@ button:hover {
     transition: transform 0.3s;
   }
   #location-img {
-    /* position: absolute !important; */
+    position: absolute !important;
     display: block;
     height: 40vh !important;
     width: 100%;
@@ -1080,7 +1080,7 @@ button:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(/images/sun-1.jpg) no-repeat fixed center/cover;
+    background: url(/images/sun-1.jpg) no-repeat fixed center/cover !important;
     opacity: 0.6;
   }
   video {
