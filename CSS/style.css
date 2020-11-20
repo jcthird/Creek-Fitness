@@ -180,7 +180,7 @@ header p {
 .section-2 .item-2,
 .section-2 .item-3 {
   margin-top: 10px;
-
+  /* padding: 10px; */
   transition: transform 0.3s;
 }
 
@@ -876,7 +876,7 @@ button:hover {
     transition: transform 0.3s;
   }
   #location-img {
-    position: absolute !important;
+    /* position: absolute !important; */
     display: block;
     height: 40vh !important;
     width: 100%;
@@ -958,7 +958,7 @@ button:hover {
   }
 
   .line-one {
-    width: 65%;
+    width: 85%;
     height: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -1070,6 +1070,20 @@ button:hover {
     padding-left: 50px !important;
     padding-right: 90px;
     /* font-size: 5.5rem; */
+  }
+
+  #b-2::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/images/sun-1.jpg) no-repeat fixed center/cover;
+    opacity: 0.6;
+  }
+  video {
   }
 }
 /* Video css */
