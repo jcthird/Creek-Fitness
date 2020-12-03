@@ -69,7 +69,7 @@ nav {
   background-color: #232a3b;
   color: #fff;
   font-size: 1.4em;
-  padding: 20px;
+  padding: 15px;
   text-transform: uppercase;
 }
 
@@ -528,7 +528,7 @@ button:hover {
 
 /* Header CSS */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 801px) {
   .social-menu {
     display: block;
   }
@@ -551,6 +551,7 @@ button:hover {
 
   .main-header ul li {
     color: #fff;
+    text-align: center !important;
   }
   /* Underline Stroke */
   nav.stroke ul li a {
@@ -596,6 +597,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     font-size: 1em;
+    text-align: center;
   }
 
   .main-header nav {
@@ -694,9 +696,55 @@ button:hover {
   }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1145px) {
+  #leave-img {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  nav h1 {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+  #main-slogan {
+    background: url(/images/Speciality-Certs_Feature.png) no-repeat center
+      center/cover;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    margin: 0;
+    position: relative !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+
+  body {
+    padding: 0px !important;
+  }
+
+  header#all-3 {
+    position: relative;
+    background-color: #fff;
+    height: 100% !important;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
 /* Mobile Landscape Mode CSS */
 
-@media only screen and (min-width: 500px) and (orientation: landscape) {
+@media only screen and (min-width: 800px) and (orientation: landscape) {
   .social-menu {
     display: block;
   }
@@ -824,7 +872,205 @@ button:hover {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (max-width: 481px) and (orientation: landscape) {
+  .social-menu {
+    display: block;
+  }
+  .main-header {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #arrow {
+    color: #44c184 !important;
+  }
+
+  .main-header nav,
+  .main-header ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+  }
+  .main-header nav {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .main-header ul {
+    margin-right: 10%;
+  }
+  .main-header h1 {
+    align-self: center;
+    margin: 0 auto 0 10%;
+  }
+  .main-header li {
+    margin-right: 30px;
+  }
+  /* Container CSS */
+  .container {
+    width: 80%;
+  }
+  .flex-container {
+    display: flex;
+  }
+  /* Section 1 */
+  .item-1,
+  .item-2,
+  .item-3 {
+    flex-grow: 1;
+  }
+  .section-1 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 2 CSS */
+  .section-2 .item-2 {
+    margin: 0 20px;
+  }
+  /* Section 3 CSS */
+  .section-3 .item-2 {
+    /* display: flex; */
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .section-3 .item-2 .input {
+    flex-grow: 0.7;
+    margin-top: 20px;
+  }
+  /* Main Footer CSS */
+  .main-footer {
+    text-align: left;
+  }
+  .main-footer .item-1,
+  .main-footer .item-2 {
+    flex: 1;
+  }
+  .main-footer .item-1 {
+    flex: 2 40%;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .contact-info {
+    line-height: 1.5;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 70%;
+  }
+  /* Gyms CSS */
+  .gyms-title {
+    font-size: 2em;
+  }
+  .gyms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .gyms-item-1,
+  .gyms-item-2,
+  .gyms-item-3 {
+    flex-grow: 1;
+  }
+  /* Trainers Page CSS */
+  .trainer-profile {
+    flex-direction: row;
+  }
+  .trainer-profile img {
+    height: 250px;
+  }
+  .trainer-profile-content {
+    height: 250px;
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  #train-1::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/images/t-1jpg.jpg) no-repeat center center/cover;
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1280px) {
+  #creek-title {
+    text-align: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+    position: absolute !important;
+    display: block !important;
+  }
+  #links-a {
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    left: 70px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    justify-content: center !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+  .container-t {
+    display: none;
+  }
+  .social-menu {
+    display: block;
+  }
+  .main-header p {
+    font-size: 3em;
+    padding: 20%;
+    margin: auto !important;
+    text-align: center !important;
+    position: absolute !important;
+  }
+
+  #arrow {
+    color: #44c184 !important;
+    text-align: center !important;
+    font-size: 3rem !important;
+    position: absolute;
+    margin-bottom: 100px;
+  }
+
+  .call-to-action h2 {
+    margin-right: 5%;
+  }
+  .call-to-action p {
+    font-size: 1.3em;
+    width: 100px;
+  }
+  .sign-up {
+    padding: 15px 150px;
+  }
+  /* Sign Up Form */
+  .join-now-container {
+    width: 40%;
+  }
+  /* Trainer CSS */
+  .trainer-profile {
+    width: 50%;
+  }
+  .trainer-profile-content {
+    padding-top: 8%;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  #links-a {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    left: 150px;
+  }
   .container-t {
     display: none;
   }
@@ -867,7 +1113,40 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 481px) {
+@media (min-width: 481px) and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 800px) {
+  header p {
+    color: #44c184;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  #leave-img {
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  #main-slogan {
+    background: url(/images/Speciality-Certs_Feature.png) no-repeat center
+      center/cover;
+    /* background-size: cover !important;
+    background-position: 100% 100% !important; */
+    margin: 0;
+    position: relative !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
   .section-2 .item-1,
   .section-2 .item-2,
   .section-2 .item-3 {
@@ -932,7 +1211,7 @@ button:hover {
   header#all-3 {
     position: relative;
     background-color: #fff;
-    height: 10vh !important;
+    height: 50vh !important;
     width: 100%;
     overflow: hidden;
   }
@@ -1092,7 +1371,7 @@ header#all-3 {
   position: relative;
   background-color: #fff;
   height: 90vh;
-  min-height: 25rem;
+  /* min-height: 25rem; */
   width: 100%;
   overflow: hidden;
 }
@@ -1211,7 +1490,7 @@ header .container {
   z-index: 2;
 }
 
-header .overlay {
+/* header .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1220,12 +1499,11 @@ header .overlay {
   background-color: black;
   opacity: 0.5;
   z-index: 1;
-}
+} */
 video {
   max-width: 100% !important;
   height: auto !important;
   object-fit: cover;
-  padding-top: 100px;
 
   /* display: block; */
 }
@@ -1548,6 +1826,15 @@ video {
 }
 
 .container-c {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
+.container- {
   position: relative;
   text-align: center;
   color: white;
