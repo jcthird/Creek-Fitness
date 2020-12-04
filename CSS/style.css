@@ -1117,8 +1117,276 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
+  /* #my-div {
+    font-size: 3rem !important;
+    text-align: center !important;
+    padding: 0px !important;
+  }
+  .york-1 {
+    text-align: center !important;
+    padding: 0px !important;
+  } */
   header p {
     color: #44c184;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  #leave-img {
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  #main-slogan {
+    background: url(/images/Speciality-Certs_Feature.png) no-repeat center
+      center/cover;
+    /* background-size: cover !important;
+    background-position: 100% 100% !important; */
+    margin: 0;
+    position: relative !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  }
+  .section-2 .item-1,
+  .section-2 .item-2,
+  .section-2 .item-3 {
+    margin-top: 10px;
+    padding: 25px;
+    transition: transform 0.3s;
+  }
+  #location-img {
+    position: absolute !important;
+    display: block;
+    height: 40vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  #contact-img {
+    /* position: absolute !important; */
+    display: block;
+    height: 30vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  #contact-img-t {
+    position: absolute !important;
+    display: block;
+    height: 50vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
+  .social-menu {
+    display: none;
+  }
+
+  .call-to-action {
+    font-size: 12px;
+  }
+
+  #links-a {
+    display: flex;
+    list-style: none;
+    left: 0;
+    position: fixed;
+    flex-direction: column;
+    font-size: 1.4rem;
+    display: none;
+    z-index: 10;
+  }
+
+  nav h1 a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  header#all-3 {
+    position: relative;
+    background-color: #fff;
+    height: 50vh !important;
+    width: 100%;
+    overflow: hidden;
+  }
+  #train-1 {
+    display: none;
+  }
+
+  .centered {
+    position: absolute !important;
+    top: 110px !important;
+    transform: translate(-50%, -50%) !important;
+    color: #232a3b;
+    font-size: 3.2rem !important;
+    /* font-weight: bold; */
+  }
+  .centered-g {
+    position: absolute !important;
+    top: 110px !important;
+    transform: translate(-50%, -50%) !important;
+    color: #232a3b;
+    font-size: 2.2rem !important;
+    font-weight: bold;
+  }
+
+  .line-one {
+    width: 85%;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid black;
+  }
+
+  .video-container {
+    /* object-fit: contain !important; 
+    z-index: -1 !important;
+    display: block !important;
+    height: 100vh !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+     object-position: 50% 50% !important; 
+     opacity: 0.7;  */
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100% !important;
+    min-height: 80% !important;
+    padding-top: 90px !important;
+    width: auto;
+    height: auto;
+    background-size: cover !important;
+    overflow: hidden; */
+    height: 20vh !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: 50% 100% !important;
+    /* opacity: 0.4; */
+  }
+
+  header#all-3 {
+    z-index: 10;
+  }
+
+  /* Location btn */
+  .btn-underline {
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+    display: inline-block;
+    font-size: 10px !important;
+    padding: 10px 10px !important;
+    border: 2px solid #333;
+    background-color: #44c184;
+    /* color: #fff !important; */
+    cursor: pointer;
+    margin-bottom: 50px auto !important;
+    border-radius: 50px;
+    animation: shadow-pulse 2s infinite;
+    text-transform: uppercase;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+    /* background: transparent; */
+    color: #fff !important;
+    /* border: none; */
+    /* font-size: 20px; */
+    letter-spacing: 1px;
+    /* padding: 25px 80px; */
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    /* animate and time the transitions*/
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0.8;
+  }
+  .btn-underline:hover {
+    background-color: rgb(3, 105, 71);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 1.2s;
+  }
+
+  .btn-center {
+    margin: 0;
+    position: absolute;
+    top: 85% !important;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /* end */
+
+  #my-div {
+    /* background: url(/images/pool-1.jpg) no-repeat center center/cover; */
+    text-align: left;
+    color: #343d46;
+    font-size: 5.5rem;
+    opacity: 0.9;
+    /* padding-right: 100px;
+  position: relative;
+  top: 8px;
+  left: 16px; */
+    box-sizing: border-box;
+    /* padding-left: 200px;
+  padding-top: 200px; */
+    padding-bottom: 50px !important;
+    padding-right: 0px !important;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+  }
+
+  .york-1 {
+    padding-left: 50px !important;
+    padding-right: 90px;
+    /* font-size: 5.5rem; */
+  }
+
+  #b-2::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/images/sun-1.jpg) no-repeat fixed center/cover !important;
+    opacity: 0.6;
+  }
+  video {
+    display: none;
+  }
+}
+/* Mobile CSS */
+@media (max-width: 481px) {
+  #my-div {
+    font-size: 2rem !important;
+    text-align: left !important;
+  }
+  .york-1 {
+    text-align: left !important;
+  }
+  header p {
+    color: #44c184;
+    font-size: 1.5rem;
     max-width: 100% !important;
     max-height: 100% !important;
   }
@@ -1852,7 +2120,7 @@ video {
   text-transform: uppercase;
   height: 100%;
 }
-.container-g {
+.container-l {
   position: relative;
   text-align: center;
   color: white;
@@ -1860,6 +2128,15 @@ video {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   height: 100%;
+}
+.container-g {
+  position: relative;
+  /* text-align: center; */
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  /* height: 100%; */
 }
 .container-i {
   position: relative;
