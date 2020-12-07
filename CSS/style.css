@@ -65,6 +65,12 @@ h3 {
   position: relative;
   left: 150px;
 }
+
+#centered-g {
+  text-align: center;
+  position: absolute;
+  vertical-align: middle;
+}
 nav {
   background-color: #232a3b;
   color: #fff;
@@ -529,6 +535,12 @@ button:hover {
 /* Header CSS */
 
 @media only screen and (min-width: 801px) {
+  .container {
+    /* margin: 0 !important; */
+    text-align: center;
+    width: 90%;
+  }
+
   .social-menu {
     display: block;
   }
@@ -697,6 +709,18 @@ button:hover {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1145px) {
+  .container-a {
+    display: none;
+  }
+  #location-img {
+    /* position: absolute !important; */
+    display: block;
+    height: auto !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  }
   #leave-img {
     display: block;
     height: 100vh;
@@ -728,6 +752,21 @@ button:hover {
     max-width: 100% !important;
     max-height: 100% !important;
   }
+  /* #main-slogan-2 {
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    margin: 0;
+    position: relative !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 100% !important;
+    max-height: 100% !important;
+  } */
 
   body {
     padding: 0px !important;
@@ -1001,13 +1040,13 @@ button:hover {
 }
 
 @media (min-width: 801px) and (max-width: 1280px) {
-  #creek-title {
+  /* #creek-title {
     text-align: center !important;
     justify-content: center !important;
     align-self: center !important;
     position: absolute !important;
     display: block !important;
-  }
+  } */
   #links-a {
     list-style-type: none;
     position: relative;
@@ -1065,6 +1104,15 @@ button:hover {
   }
 }
 @media only screen and (min-width: 1281px) {
+  .container-a {
+    display: none;
+  }
+  .container-l {
+    display: none;
+  }
+  #main-slogan {
+    display: none;
+  }
   #links-a {
     list-style-type: none;
     display: flex;
@@ -1078,8 +1126,11 @@ button:hover {
     display: block;
   }
   .main-header p {
+    /* trainers p */
     font-size: 3em;
-    padding: 20%;
+    /* padding: 20%;
+    position: relative; */
+    text-align: center;
   }
 
   #arrow {
@@ -1114,22 +1165,27 @@ button:hover {
 }
 
 @media (min-width: 481px) and (max-width: 800px) {
+  .container-a {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  /* #my-div {
+  #my-div {
     font-size: 3rem !important;
-    text-align: center !important;
-    padding: 0px !important;
+    padding-right: 1000px !important;
   }
   .york-1 {
-    text-align: center !important;
-    padding: 0px !important;
-  } */
+    text-align: left !important;
+    padding-left: 500px !important;
+  }
   header p {
     color: #44c184;
     max-width: 100% !important;
     max-height: 100% !important;
+    text-align: center !important;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   #leave-img {
     display: block;
@@ -1164,11 +1220,9 @@ button:hover {
     transition: transform 0.3s;
   }
   #location-img {
-    position: absolute !important;
     display: block;
-    height: 40vh !important;
-    width: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
     object-position: 50% 100%;
     opacity: 0.4;
   }
@@ -1190,6 +1244,15 @@ button:hover {
     object-position: 50% 100%;
     opacity: 0.4;
   }
+  /* #contact-img-a {
+    position: absolute !important;
+    display: block;
+    height: 50vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100%;
+    opacity: 0.4;
+  } */
   .social-menu {
     display: none;
   }
@@ -1229,6 +1292,14 @@ button:hover {
   }
 
   .centered {
+    /* position: absolute !important;
+    top: 110px !important;
+    transform: translate(-50%, -50%) !important;
+    color: #232a3b;
+    font-size: 3.2rem !important;
+    font-weight: bold; */
+  }
+  .centered-a {
     position: absolute !important;
     top: 110px !important;
     transform: translate(-50%, -50%) !important;
@@ -1237,12 +1308,17 @@ button:hover {
     /* font-weight: bold; */
   }
   .centered-g {
+    text-align: center !;
     position: absolute !important;
-    top: 110px !important;
-    transform: translate(-50%, -50%) !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    /* transform: translate(-50%, -50%) !important; */
     color: #232a3b;
     font-size: 2.2rem !important;
     font-weight: bold;
+    vertical-align: middle;
   }
 
   .line-one {
@@ -1377,12 +1453,25 @@ button:hover {
 }
 /* Mobile CSS */
 @media (max-width: 481px) {
-  #my-div {
-    font-size: 2rem !important;
-    text-align: left !important;
+  .center-m {
+    position: absolute;
+    top: 65% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #44c184;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-family: audiowide;
   }
-  .york-1 {
-    text-align: left !important;
+  .center-t {
+    position: absolute;
+    top: 35% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #44c184;
+    font-size: 3rem;
+    font-family: audiowide;
   }
   header p {
     color: #44c184;
@@ -1408,12 +1497,17 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    top: 0;
+    height: 35vh !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 100% !important;
+    opacity: 0.4;
+    /* top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     max-width: 100% !important;
-    max-height: 100% !important;
+    max-height: 100% !important; */
   }
   .section-2 .item-1,
   .section-2 .item-2,
@@ -1429,7 +1523,7 @@ button:hover {
     width: 100%;
     object-fit: cover;
     object-position: 50% 100%;
-    opacity: 0.4;
+    opacity: 0.3 !important;
   }
   #contact-img {
     /* position: absolute !important; */
@@ -1438,16 +1532,36 @@ button:hover {
     width: 100%;
     object-fit: cover;
     object-position: 50% 100%;
-    opacity: 0.4;
+    opacity: 0.3 !important;
   }
   #contact-img-t {
     position: absolute !important;
     display: block;
-    height: 50vh !important;
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+    padding-bottom: 50px;
+    object-position: 50% 100%;
+    opacity: 0.3;
+  }
+  #contact-img-a {
+    background-size: contain !important;
+    background-position: center !important;
+    position: relative !important;
+    display: block;
+    height: auto !important;
+    /* Fill screen mobile */
+    width: 120%;
+    opacity: 0.3;
+  }
+
+  #join-img {
+    display: block;
+    height: 30vh !important;
     width: 100%;
     object-fit: cover;
     object-position: 50% 100%;
-    opacity: 0.4;
+    opacity: 0.3 !important;
   }
   .social-menu {
     display: none;
@@ -1488,20 +1602,37 @@ button:hover {
   }
 
   .centered {
-    position: absolute !important;
+    /* position: absolute !important;
     top: 110px !important;
     transform: translate(-50%, -50%) !important;
-    color: #232a3b;
-    font-size: 3.2rem !important;
-    /* font-weight: bold; */
+    color: #232a3b; */
+    font-size: 1rem !important;
+    font-weight: bold;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+  .centered-a {
+    position: absolute !important;
+    /* top: 110px !important; */
+    transform: translate(-50%, -50%) !important;
+    color: #232a3b !important;
+    font-size: 1rem !important;
+    font-family: audiowide;
+    font-weight: bold;
   }
   .centered-g {
     position: absolute !important;
-    top: 110px !important;
-    transform: translate(-50%, -50%) !important;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    /* transform: translate(-50%, -50%) !important; */
     color: #232a3b;
     font-size: 2.2rem !important;
     font-weight: bold;
+    vertical-align: middle;
   }
 
   .line-one {
@@ -1614,7 +1745,7 @@ button:hover {
   }
 
   .york-1 {
-    padding-left: 50px !important;
+    padding-left: 50px;
     padding-right: 90px;
     /* font-size: 5.5rem; */
   }
@@ -1702,7 +1833,7 @@ header#all-3 {
   /* background: url(/images/pool-1.jpg) no-repeat center center/cover; */
   text-align: left;
   color: #343d46;
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   opacity: 0.9;
   /* padding-right: 100px;
   position: relative;
@@ -1870,14 +2001,15 @@ video {
 
 #train-1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1rem;
   opacity: 0.9;
   box-sizing: border-box;
 }
 
 #train-1 p {
   color: #232a3b;
-  font-family: "Roboto Condensed", sans-serif;
+  padding-top: 250px !important;
+  font-family: audiowide;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -2080,7 +2212,7 @@ video {
   width: 100%;
   object-fit: cover;
   object-position: 50% 35%;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .container-j {
@@ -2102,7 +2234,7 @@ video {
   text-transform: uppercase;
   height: 100%;
 }
-.container- {
+.container-a {
   position: relative;
   text-align: center;
   color: white;
@@ -2156,6 +2288,15 @@ video {
   text-transform: uppercase;
   height: 100%;
 }
+.container-a {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+}
 
 /* .p-c p {
   display: inline;
@@ -2167,15 +2308,30 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #232a3b;
-  font-size: 5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: audiowide;
 }
-.centered-g {
+
+.centered-a {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #232a3b;
   font-size: 5rem;
+}
+.centered-g {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* transform: translate(-50%, -50%); */
+  color: #232a3b;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
 header.container-c {
