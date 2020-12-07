@@ -709,9 +709,6 @@ button:hover {
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1145px) {
-  .container-a {
-    display: none;
-  }
   #location-img {
     /* position: absolute !important; */
     display: block;
@@ -1059,7 +1056,21 @@ button:hover {
     text-align: center !important;
     vertical-align: middle !important;
   }
-  .container-t {
+  #contact-img-t {
+    position: relative !important;
+    display: block;
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover;
+    /* padding-bottom: 50px; */
+    object-position: 50% 100%;
+    opacity: 0.3;
+  }
+  .container-a {
+    display: none;
+  }
+  #train-1 {
+    display: none;
   }
   .social-menu {
     display: block;
