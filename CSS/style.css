@@ -532,6 +532,8 @@ button:hover {
 
 /* Media Queries */
 
+/* Still Need Tablet */
+
 /* Header CSS */
 
 @media only screen and (min-width: 801px) {
@@ -2330,7 +2332,7 @@ video {
   transform: translate(-50%, -50%);
   color: #232a3b;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: audiowide;
 }
 
